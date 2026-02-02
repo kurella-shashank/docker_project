@@ -1,6 +1,6 @@
 FROM python:3.9-slim
 #set a working directory
-WORKDIR ./app
+WORKDIR /app
 #copy local files to directory
 COPY ./app
 
