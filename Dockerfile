@@ -10,4 +10,4 @@ RUN uv pip install  --no-cache-dir-r requirements.txt
 #expose the port, streamlit to run
 EXPOSE 8501
 
-CMD["streamlit","run","app.py","--server.port","8080","--server.address","0.0.0.0"]
+CMD ["streamlit","run","app.py","--server.port","8080","--server.address","0.0.0.0"]
