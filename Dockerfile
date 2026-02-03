@@ -8,6 +8,9 @@ COPY . /app
 RUN apt-get update && apt-get install -y curl && \
     curl-LsSf https://astral.shuv/install.sh | sh
 
+# Add uv to the path
+ENV PATH="/root/.local/bin:$PATH"
+
 #install dependicies
 RUN uv pip install  --no-cache-dir -r requirements.txt
 
